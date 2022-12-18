@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Tinkler
+    link(rel='stylesheet', href='static/chat.css')
+  body
+    .container
+      .chatroom
+        img(src='/static/img/logo.png', alt='')
+        div Tinkler Chat room
+      .chatbox
+      div
+        form(action='#')
+          input#input.textarea(name='input', cols='30')
+          button.btn &gt;
+    //- script(src='http://localhost:8000/socket.io/socket.io.js')
+    script(src='/socket.io/socket.io.js');
+    script(src='static/client.js')
